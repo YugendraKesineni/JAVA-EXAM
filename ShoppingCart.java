@@ -8,6 +8,7 @@ class ShoppingCart {
 	double discount;
 	double tax;
 	String coupon;
+
 	ShoppingCart() {
 		this.item = new ArrayList<>();
 		this.coupon = "";
@@ -16,26 +17,30 @@ class ShoppingCart {
 		this.discount = 0;
 		this.tax = 0;
 	}
+
+    /*
+     * 5. Add parameter to cart
+     */
 	void addToCart(Item item) {
-		this.item.add(item);
+		// Write code here
 	}
+
+    /**
+     * 6. Display the cart Items using iterator
+     */
 	public void showCart() {
-		ListIterator<Item> iterator = item.listIterator();
-		while(iterator.hasNext()) {
-			Item item1 = iterator.next();
-			System.out.println(item1);
-		}
+		// Write Code here
 	}
+
+    /**
+     * 7. Remove the item from cart
+     * @param i to be removed from cart items
+     */
 	public void removeFromCart(Item i) {
-		ListIterator<Item> iterator1 = item.listIterator();
-		while(iterator1.hasNext()) {
-			Item item2 = iterator1.next();
-			if (item2.getProductName().equals(i.getProductName())) {
-				this.item.remove(i);
-				break;
-			}
-		}
+		// Write code here
 	}
+
+    
 	public double getTotalAmount() {
 		ListIterator<Item> iterator2 = item.listIterator();
 		this.totalAmount = 0;

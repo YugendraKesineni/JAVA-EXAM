@@ -7,9 +7,7 @@ class Item {
 	 * 1. Implement the constructor
 	 */
 	Item(String productName, int quantity, double unitPrice) {
-		this.productName = productName;
-		this.quantity = quantity;
-		this.unitPrice = unitPrice;
+		// Write code here
 	}
 	public String toString() {
 		String s = this.productName + ":";
@@ -21,20 +19,20 @@ class Item {
 	 * 2. Implement this method
 	 */
 	public String getProductName() {
-		return this.productName;
+		// Write Code here
 	}
 
 	/*
 	 * 3. Implement this method
 	 */
 	public int getQuantity() {
-		return this.quantity;
+		// Write Code here
 	}
 
 	/*
 	 * 4. Implement this method
 	 */
 	public double getUnitPrice() {
-		return this.unitPrice;
+		// Write Code here
 	}
 }
